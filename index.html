@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Netuno</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Aqui é onde a fonte é inserida no site-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <!--Esse é o menu de navegação do site-->
+    <nav id="menu">
+        <ul>
+            <li><a href="#"><img src="imagens/logo.png" alt="Logo do Projeto Netuno" /></a></li>
+                <li><a href="#oprojeto">O Projeto</a></li>
+                <li><a href="#oproblema">O Problema</a></li>
+                <li><a href="#suajornada">Sua Jornada</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><button type="submit">Processo Seletivo</button></li>
+        </ul>
+    </nav>
+    <hr id="nav-line">
+</header>
+    
+<main>
+
+<!--Esse é a sessão onde fica o formulário de cadastro e a imagem-->
+<section id="formulariobanner" class="container">
+    <!--Imagem do banner principal do site, ao lado do formulário-->
+    <div class="lado-esquerdo" id="estudantes">
+        <img src="imagens/bannertopo.png" alt="Imagem de dois estudantes sorridentes"></div>
+
+    <!--Informações do Formulário-->
+    <div id="formulario" class="lado-direito">
+        <form action="">
+        <div class="espacamentoform">
+            <h1>Formulário de Cadastro</h1>
+            <p>Preencha seus dados</p>
+            <div><input type="text" placeholder="Nome completo*" id="nome" name="nome" class="input-forma" required></div>
+            <div><input type="email" placeholder="E-mail*" id="email" name="email" class="input-forma" required></div>
+            <div>
+                <select id="estado" name="estado" required class="input-forma">
+                    <option value="" disabled selected hidden>Estado*</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+            </div>
+        </div>
+                    
+        <div id="conhecimentopro">
+
+            <div><label id="conhecimentolabel">Conhecimento de Programação*</label></div>
+                <div id="checkconhecimento">
+                    <input type="checkbox">HTML
+                    <input type="checkbox">CSS
+                    <input type="checkbox">JavaScript
+                    <input type="checkbox">PHP
+                    <input type="checkbox">.NET
+                    <input type="checkbox">VUE.JS
+                    <input type="checkbox">ReactJS
+                    <input type="checkbox">React Native
+                    <input type="checkbox">Node
+                    <input type="checkbox">Python
+                    <input type="checkbox">Flutter
+                    <input type="checkbox">Outras
+                </div>
+                        
+        </div>
+        <div class="espacamentoform">
+            <div>
+              <p>Já trabalhou com desenvolvimento?</p>
+            </div>
+            <div id="simenao">
+              <div>
+                <input type="radio" id="sim" name="trabalhou">
+                <label for="sim">Sim</label>
+              </div>
+              <div>
+                <input type="radio" id="nao" name="trabalhou">
+                <label for="nao">Não</label>
+              </div>
+            </div>
+        </div>
+            <hr id="linhaform">
+
+            <div class="espacamentoform">
+                <p id="camposobri">(*) Campos obrigatórios</p>
+                <button type="submit">Enviar</button>
+                <p id="termos">Ao clicar em enviar, você concorda com 
+                todos os termos de uso de dados descritos em <a href="">política de privacidade</a></p>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<!--Aqui ficam as informações sobre o projeto Netuno no site-->
+<section class="container" id="oprojeto">
+    <div class="lado-esquerdo">
+        <img src="imagens/dev.png" alt="Imagem com janelas com códigos escritos">
+    </div>
+    <div class="lado-direito" id="textoprojeto">
+        <h2>O Projeto</h2>
+        <p>Com o “novo normal” causado pela pandemia dos últimos anos, mais 
+        empresas no mundo todo têm aberto oportunidades no modelo Home Office.
+        Alinhado a depreciação da moeda local, 
+        temos um alto índice de profissionais migrando para trabalhos em outros países.
+        <br>
+        <br>
+        <b>O projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir os 
+        estresses causados por recrutamento e turn over na área de tecnologia, bem como 
+        gerar oportunidades de carreira para novos profissionais.</b></p>
+    </div>
+</section>
+
+<!--Aqui é a sessão da parte 'O Problema'-->
+<section id="oproblema" class="container">
+
+    <div class="lado-esquerdo">
+        <img src="imagens/mulher.png" alt="Imagem de uma mulher confiante" class="lado-esquerdo">
+    </div>
+
+    <div class="lado-direito" id="textoproblema">
+    <h2>O Problema</h2>
+    <p>
+        <b>Falta de profissionais de TI no Mercado brasileiro: 
+        um problema que demanda atenção urgente.</b>
+        <br>
+        <hr>
+        <br>
+        Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas
+         se acumulando na casa dos R$167 bilhões, de acordo com a Softex, uma organização social 
+         voltada ao fomento da área de TI.
+        <br>
+        <br>
+        <b>Um dos principais fatores dessa falta de profissionais é o êxodo de profissionais para o exterior. </b>
+    </p>
+    </div>
+
+</section>
+<div class="espacamento-trioblocos">
+
+    <div class="trioblocos"><h2>Oportunidade</h2>
+        <p>Acreditamos que a combinação de interesse, dedicação e oportunidade pode causar um grande impacto 
+            nas pessoas, nas organizações e no mundo.
+        </p>
+        </div>
+
+        <div class="trioblocos"><h2>Comunidade</h2>
+        <p>Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de 
+            forma mais rápida, fluída e eficiente.
+        </p>
+        </div>
+
+        <div class="trioblocos"><h2>Experiência Real</h2>
+        <p>Entendemos que somente as experiências reais poderão trazer a bagagem que a teoria não o pode fazer.
+        </p>
+    </div>
+
+</div>
+
+<!--Essa é a sessão da parte 'Sua Jornada'-->
+<section id="suajornada">
+    <div id="titulojornada">
+        <img src="imagens/Vector2.png" id="vectorespe">
+        <h2>Sua Jornada</h2>
+        <img src="imagens/Vector2.png">
+    </div>
+
+    <div id="espacamentosj">
+        <div class="blocosuajornada">
+            <div><img src="imagens/calendario.png" alt="Um ícone de calendário">
+                <p>Programas de 4 meses de duração, sendo 6 horas/dia.
+                </p>
+            </div>    
+        </div>
+        <div class="blocosuajornada">
+            <div><img src="imagens/medalha.png" alt="Um ícone de uma medalha">
+                <p>Do Zero ao Junior Promissor em 4 meses.
+                </p>
+            </div>    
+        </div>
+        <div class="blocosuajornada">
+            <div><img src="imagens/relogio.png" alt="Um ícone de um relógio">
+                <p>640 horas de aplicação prática dos conceitos.
+                </p>
+            </div>    
+        </div>
+        <div class="blocosuajornada">
+            <div><img src="imagens/home.png" alt="Um ícone de uma casa">
+                <p>Mentoria individual e coletiva em padrão ágil.
+                </p>
+            </div>    
+        </div>
+        <div class="blocosuajornada">
+            <div><img src="imagens/group.png" alt="Um ícone de um grupo de pessoas">
+                <p>100% Home Office com plataformas de cursos online.
+                </p>
+            </div>    
+        </div>
+        <div class="blocosuajornada">
+            <div><img src="imagens/target.png" alt="Um ícone de um alvo">
+                <p>Variedade de áreas dentro da tecnologia.
+                </p>
+            </div>    
+        </div>
+    </div>
+
+    <div id="botaolinha">
+        <a href="#formulario" id="botaocadastrar">Quero me cadastrar para o <span>Processo Seletivo</span>
+            <img src="imagens/enter.png" alt="Um ícone de seta para a direita">
+        </a>
+            <br>
+    <img src="imagens/Vector1.png" alt="Uma linha estilizada azul">
+    </div>
+</section>
+
+<!--Essa é a sessão da parte 'Objetivos'-->
+<section id="objetivos">
+
+    <div id="titulo-objetivo"><h2>Objetivos</h2></div>
+
+    <div class="espacamento-trioblocos">
+
+        <div class="trioblocos"><h2>Otimizar</h2>
+            <p>Otimizar todo processo de contratação chegando a contribuir com uma economia de 40% no 
+                processo de recrutamento.
+            </p>
+            </div>
+    
+            <div class="trioblocos"><h2>Gerar</h2>
+            <p>Gerar novas oportunidades de carreira para pessoas interessadas em ingressar na área ou 
+                migrar de outras áreas que esteja descontente.
+            </p>
+            </div>
+    
+            <div class="trioblocos"><h2>Filtrar</h2>
+            <p>Criar oportunidades brilhantes para profissionais que se destacarem junto a parceiros 
+                estratégicos de negócios.
+            </p>
+        </div>
+    
+    </div>
+
+</section>
+</main>
+
+<footer>
+    <div>
+        <img src="imagens/logoslogan.png" alt="Logo e slogan do Projeto Netuno">
+        <br>
+        <a href="#"><img src="imagens/fb.png" alt="Logo do Facebook" class="redes-sociais"></a>
+        <a href="#"><img src="imagens/ig.png" alt="Logo do Instagram" class="redes-sociais"></a>
+        <a href="#"><img src="imagens/in.png" alt="Logo do Linkedin" class="redes-sociais"></a>
+        <p id="direitos">Netuno© 2022 - Todos os direitos reservados</p>
+    </div>
+
+    <div>
+        <button id="rodapebotao"><b>Processo Seletivo</b></button>
+    </div>
+
+    <div>
+       <a href="#oprojeto">O Projeto</a>
+        <br>
+        <br>
+        <a href="#oproblema">O Problema</a>
+        <br>
+        <br>
+        <a href="#suajornada">Sua Jornada</a>
+        <br>
+        <br>
+        <a href="#objetivos">Objetivos</a>
+    </div>
+
+    <div id="linharodape"></div>
+    <div> 
+        <b>Contato</b>
+        <br>
+        <br>
+        11 91234-5678
+        <br>
+        <br>
+        contato@netuno.com.br
+
+    </div>
+
+</footer>
+</body>
+</html>

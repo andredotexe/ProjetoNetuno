@@ -1,0 +1,518 @@
+/*Configuração geral que impede o 'vazamento' do site para as laterais*/
+*{
+  box-sizing: border-box;
+}
+
+/*Aqui é configurado a responsividade do site*/
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #formulario {
+    margin: auto;
+  }
+
+  .lado-esquerdo, .lado-direito {
+    max-width: 100%;
+  }
+
+  footer {
+    font-size: smaller;
+  }
+}
+
+/*Configurações que pegam a página toda, como fonte e bordas*/
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/*Personalização do cabeçalho*/
+header {
+  width: 100%;
+  height: 80px;
+  background: #1a7fbd;
+  padding: 10px;
+}
+
+/*Personalização do botão do menu*/
+#menu button {
+  width: 159px;
+  height: 43px;
+  background: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+}
+
+/*Aqui é onde se escolhe a cor de transição do botão do menu*/
+#menu button:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+/*Configuração de alinhamento dos tópicos do menu do cabeçalho*/
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+/*Configuração da fonte do menu do cabeçalho*/
+#menu li {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*Configurações adicionais da fonte do menu do cabeçalho*/
+#menu li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Configuração da logo no menu de cabeçalho*/
+#menu img {
+  display: block;
+  margin: 0 auto;
+  width: 55%;
+}
+
+/*Configuração de estilo da linha abaixo do menu principal*/
+#nav-line {
+  width: 90%;
+  border: 0;
+  height: 1px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255,255,255,0.1)0%, rgb(255,255,255),rgba(255,255,255,0.1));
+}
+
+#formulariobanner{
+  display: flex;
+  background: #1a7fbd;
+}
+
+#estudantes {
+  width: 100%;
+}
+
+#formulariobanner img{
+  width: 100%;
+}
+
+/*Aqui ficam as configurações de estilo de todo o formulário principal*/
+#formulario{
+  background-color: #ffffff;
+  text-align: left;
+  width: 405px;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 0.5em #FFFFFF;
+  margin: auto;
+  margin-right: 30px;
+}
+
+#formulario h1{
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #cecece;
+padding-left: 14px;
+padding-top: 7px;
+}
+
+#formulario p{
+padding-left: 14px;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+color: #1A7FBD;
+}
+
+#formulario .input-forma{
+width: 356px;
+height: 40px;
+border: 1px solid #CECECE;
+border-radius: 6px;
+margin-bottom: 10px;
+padding-left: 35px;
+}
+
+#formulario .espacamentoform{
+padding: 0 25px;
+
+}
+
+#formulario #nome {
+background-image: url(../imagens/user.png);
+background-repeat: no-repeat;
+background-position: left;
+background-size: 15px;
+background-position-x: 10px;
+}
+
+#formulario #email {
+background-image: url(../imagens/mail.png);
+background-repeat: no-repeat;
+background-position: left;
+background-size: 15px;
+background-position-x: 10px;
+}
+
+#formulario #estado {
+background-image: url(../imagens/state.png);
+background-repeat: no-repeat;
+background-position: left;
+background-size: 15px;
+background-position-x: 10px;
+}
+
+#formulario #conhecimentopro{
+background-color: #1a7fbd;
+margin-top: 22px;
+color: #ffffff;
+padding: 25px;
+}
+
+#conhecimentolabel {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+}
+
+#checkconhecimento{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-top: 17px;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+}
+
+#simenao{
+display: flex;
+flex-direction: row;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+color: #A0A0A0;
+padding: 0 12px;
+}
+
+#linhaform{
+width: 356px;
+}
+
+#camposobri{
+font-weight: 600;
+font-size: 10px !important; 
+line-height: 12px;
+text-align: center;
+letter-spacing: 0.2px;
+}
+
+#termos{
+color: #9A9A9A !important;
+text-align: center !important;
+font-size: 10px !important;
+}
+
+#formulario button{
+width: 356px;
+height: 50px;
+background: #1a7fbd;
+border-radius: 6px;
+font-size: 18px;
+color: #ffffff;
+border: none;
+cursor: pointer;
+}
+
+#formulario button:hover {
+  background: #0f4b70;
+}
+
+/*Aqui fica todas as configurações de estilo do trecho 'O Projeto' e também alguns do trecho 'O Problema'*/
+#oprojeto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1A7FBD;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%);
+  background-size: 80% 80% 80%;
+}
+
+#oprojeto img, #oproblema img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 7%;
+}
+
+#textoprojeto, #textoproblema {
+  margin: 50px;
+  padding: 60px;
+  flex-basis: 60%;
+}
+
+#textoprojeto h2{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #A4DCFF;
+}
+
+#textoprojeto p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+/*Aqui são as configurações de estilo do trecho 'O Problema' e alguns de 'Sua Jornada'*/
+#oproblema{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#oproblema h2, #suajornada h2{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  background: linear-gradient(87.58deg, #1A7FBD 1.01%, #6CBFF2 100.21%);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;background-clip: text;
+}
+
+.espacamento-trioblocos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  /*transform: translateY(-50%);*/
+}
+
+.trioblocos h2{
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.trioblocos p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.trioblocos {
+  box-sizing: border-box;
+  border: 1px solid #E8E8E8;
+  border-radius: 12px;
+  background: #FFFFFF;
+  width: 327px;
+  height: 228px;
+  margin: 6px;
+  padding: 20px;
+  box-shadow: 0 0 12px 0.5px black;
+}
+
+/*Essas são as configurações do trecho 'Sua Jornada'*/
+#suajornada{
+  margin-top: 140px;
+}
+
+#vectorespe {
+  transform: scaleX(-1);
+}
+
+#titulojornada img{
+  width: 30%;
+  margin: 20px;
+}
+
+#titulojornada{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#espacamentosj{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.blocosuajornada{
+  box-sizing: border-box;
+  width: 320px;
+  height: 77px;
+  background: #1A7FBD;
+  border: none;
+  border-radius: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 0.5em black;
+  
+}
+
+.blocosuajornada p{
+  position: relative;
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-left: 86px;
+  margin-right: 31px;
+  margin-bottom: 21px;
+  margin-top: -36px;
+}
+
+.blocosuajornada img{
+  position: relative;
+  width: 51px;
+  height: 51px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-right: 267px;
+  margin-left: 22px;
+  top: 15px;
+  bottom: 20px;
+}
+
+#botaolinha{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 114px;
+}
+
+#botaocadastrar{
+  display: block;
+  margin: 0 auto;
+  background: #000000;
+  border-radius: 12px;
+  width: 459px;
+  height: 70px;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#botaocadastrar span{
+  color: #1A7FBD;
+  margin-left: 5px;
+}
+
+#botaocadastrar img{
+  margin: 3px;
+  margin-top: 6px;
+  width: 21px;
+  height: 15px;
+}
+
+#botaocadastrar:hover{
+    background-color: rgb(68, 68, 68);
+}
+
+/*Essas são as configurações do trecho 'Objetivos'*/
+#objetivos {
+  margin-top: 160px;
+  padding-bottom: 125px;
+  background-color: #1A7BB6;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%);
+  background-size: 80% 80% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#titulo-objetivo {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 40px;
+}
+
+/*Essas são as configurações do rodapé*/
+footer{
+  height: auto;
+  background: #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+footer div{
+  margin: 50px;
+}
+
+#rodapebotao{
+  background: #FFFFFF;
+  cursor: pointer;
+  border: 1px solid #1A7BB6;
+  width: 159px;
+  height: 43px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#rodapebotao:hover{
+  background: #a5a5a5;
+}
+
+#linharodape{
+  height: 121px;
+  color: white;
+  border: 1px solid #424242;
+  transform: rotate(180deg);
+}
+
+.redes-sociais{
+  margin-top: 17px;
+  margin-bottom: 17px;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}
